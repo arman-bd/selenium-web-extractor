@@ -1,10 +1,7 @@
-# Database Connection
-
 import os
 from dotenv import load_dotenv
 from pymongo import MongoClient
 from fastapi import HTTPException
-
 
 async def connect_mongo():
     # Load the .env file

@@ -1,15 +1,12 @@
-from ..includes import database
+from ..includes import database as db
+from ..services import extract as ExtractService
+
+async def youtube_metadata(id: str):
+    data = await ExtractService.youtube_metadata(id)
+    return data
 
 
-async def extract_text_driver(driver, tag: str):
-    """Extract Text from a given XPATH
-
-    Args:
-        driver (WebDriver): Selenium WebDriver
-        tag (str): XPATH to extract text from
-
-    Returns:
-        str: Text extracted from the XPATH
-    """
-
+async def googleplay_metadata(package: str):
     return ""
+
+    
