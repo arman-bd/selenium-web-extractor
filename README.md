@@ -40,11 +40,50 @@ After running the command, you can access the project by visiting **http://local
 
 ## Supported Websites
 
-Currently, the project supports the following websites for testing out the project:
+Currently, the **Weaby** supports the following websites for data extraction:
 
 - [YouTube](https://www.youtube.com/)
 - [Wikipedia](https://www.wikipedia.org/)
 - [Google Play Store](https://play.google.com/store)
+
+### Adding Support for a Website
+
+To add support for a website, you need to follow the steps below:
+
+1. Create a Service Method in **app/services/extract.py**.
+
+```python
+async def website_data(driver: uc.Chrome, id: str, wait: int = 5):
+    driver.get(f"https://YOUR_WEBSITE_HERE/{id}")
+    time.sleep(wait)
+    title = driver.find_element(By.XPATH, "/html/body/div[3]/h1/span").text
+    description = driver.find_element(By.XPATH, "/html/body/div[3]/div[3]/div[5]/div[1]/p[2]").text
+    return {
+        "title": title,
+        "description": description
+    }
+```
+
+2. Create a Controller Method in **app/controllers/extract.py**.
+
+```python
+async def website_data(id: str):
+    try:
+        driver = wd.create_driver()
+        return await ExtractService.website_data(driver, id, 5)
+    except Exception as e:
+        return {"error": str(e)}
+```
+
+3. Create a Router Method in **app/routers/extract.py**.
+
+```python
+@router.get("/website/{id}", response_model=WebsiteData)
+async def website_data(id: str):
+    return await ExtractController.website_data(id)
+```
+
+Now you can access the data from the website by sending a **GET** request to **http://localhost:8081/extract/website/{id}**.
 
 ## Weaby in Action
 
