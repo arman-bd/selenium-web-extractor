@@ -43,7 +43,7 @@ After running the command, you can access the project by visiting **http://local
 Currently, the project supports the following websites for testing out the project:
 
 - [YouTube](https://www.youtube.com/)
-- [Wikipeida](https://www.wikipedia.org/)
+- [Wikipedia](https://www.wikipedia.org/)
 - [Google Play Store](https://play.google.com/store)
 
 ## Weaby in Action
