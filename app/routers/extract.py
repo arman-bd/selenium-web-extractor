@@ -7,7 +7,11 @@ router = APIRouter(
     responses={404: {"description": "Endpoint Not Found"}},
 )
 
-@router.get("/wikipedia/{id}")
+@router.get("/wikipedia/{tag}")
+async def wikipedia_metadata(tag: str):
+    return await ExtractController.wikipedia_metadata(tag)
+
+@router.get("/youtube/{id}")
 async def youtube_metadata(id: str):
     return await ExtractController.youtube_metadata(id)
 
