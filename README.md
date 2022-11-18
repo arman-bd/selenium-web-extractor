@@ -7,7 +7,7 @@
 ## Installation
 
 ### Docker
-To install the project, you need to have **Docker** and **Docker Compose** installed on your machine. You can download Docker from [here](https://www.docker.com/products/docker-desktop) and Docker Compose from [here](https://docs.docker.com/compose/install/).
+To install the project, you need to have **Python 3**, **Docker** and **Docker Compose** installed on your machine. You can download Python from [here](https://www.python.org/downloads/), Docker from [here](https://www.docker.com/products/docker-desktop) and Docker Compose from [here](https://docs.docker.com/compose/install/).
 
 ### Project
 After installing Docker and Docker Compose, you can clone the project by running the following command:
