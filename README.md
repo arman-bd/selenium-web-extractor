@@ -36,7 +36,7 @@ docker compose up --build -d
 
 After running the command, you can access the project by visiting **http://localhost:8081** in your browser.
 
-<img src="res/weaby-screenshot-homepage.png" width="100%" />
+<img src="res/screenshot-homepage.png" width="100%" />
 
 ## Disclaimer
 
