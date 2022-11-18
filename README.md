@@ -36,7 +36,19 @@ docker compose up --build -d
 
 After running the command, you can access the project by visiting **http://localhost:8081** in your browser.
 
-<img src="res/screenshot-homepage.png" width="100%" />
+<img src="res/weaby-home.png" width="100%" />
+
+## Supported Websites
+
+Currently, the project supports the following websites for testing out the project:
+
+- [YouTube](https://www.youtube.com/)
+- [Wikipeida](https://www.wikipedia.org/)
+- [Google Play Store](https://play.google.com/store)
+
+## Weaby in Action
+
+<img src="res/weaby-dashboard.gif" width="100%" />
 
 ## Disclaimer
 
