@@ -31,7 +31,7 @@ You may change the **.env** file according to your needs. To change the **.env**
 Run the following command to start the project:
 
 ```bash
-docker-compose --build up -d
+docker compose up --build -d
 ```
 
 After running the command, you can access the project by visiting **http://localhost:8081** in your browser.
