@@ -36,6 +36,8 @@ docker compose up --build -d
 
 After running the command, you can access the project by visiting **http://localhost:8081** in your browser.
 
+<img src="res/weaby-screenshot-homepage.png" width="100%" />
+
 ## Disclaimer
 
 The project is still in development and is not ready for production. The project is not tested thoroughly and may contain bugs. It is designed to be used for educational purposes only. The very purpose of this project is to demonstrate how to use Selenium to interact with a websites. Use at your own risk. I am not responsible for any misuse of this project.
