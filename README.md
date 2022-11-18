@@ -2,7 +2,7 @@
 
 <img src="res/weaby-header.png" width="100%" />
 
-**Weaby** is a program that can collect data from multiple websites. It is written in **Python** and extracts data from websites using **Selenium**. The project is containerized using **Docker Compose**. (**Undetected Chrome Driver**)[https://github.com/ultrafunkamsterdam/undetected-chromedriver] within the project downloads the most recent version of Chrome Driver to support the current Chrome version, which is installed by **Docker**.
+**Weaby** is a program that can collect data from multiple websites. It is written in **Python** and extracts data from websites using **Selenium**. The project is containerized using **Docker Compose**. (Undetected Chrome Driver)[https://github.com/ultrafunkamsterdam/undetected-chromedriver] within the project downloads the most recent version of Chrome Driver to support the current Chrome version, which is installed by **Docker**.
 
 ## Installation
 
