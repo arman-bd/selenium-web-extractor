@@ -38,6 +38,10 @@ After running the command, you can access the project by visiting **http://local
 
 <img src="res/weaby-home.png" width="100%" />
 
+## Weaby in Action
+
+<img src="res/weaby-dashboard.gif" width="100%" />
+
 ## Supported Websites
 
 Currently, the **Weaby** supports the following websites for data extraction:
@@ -84,10 +88,6 @@ async def website_data(id: str):
 ```
 
 Now you can access the data from the website by sending a **GET** request to **http://localhost:8081/extract/website/{id}**.
-
-## Weaby in Action
-
-<img src="res/weaby-dashboard.gif" width="100%" />
 
 ## Disclaimer
 
